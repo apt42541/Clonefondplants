@@ -148,7 +148,6 @@ nav {
     float: left;
     position: relative;
     left: 66px;
-    margin-top: 28px;
 }
 
 .grid-item {
@@ -238,6 +237,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 18px;
 }
 
 .sidebar {
