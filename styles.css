@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
+.main {
     display: grid;
-    grid-template-areas: "header header header" "navbar navbar navbar" "content content sidebar" "footer footer footer";
-    grid-template-columns: 201px 655px 295px;
+    grid-template-areas: "header header " " navbar navbar" "content  sidebar" "footer footer ";
     grid-template-rows: 101px 60px 945px 150px;
 }
 
