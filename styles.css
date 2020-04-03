@@ -7,7 +7,7 @@
 body {
     display: grid;
     grid-template-areas: "header header header" "navbar navbar navbar" "content content sidebar" "footer footer footer";
-    grid-template-columns: 201px 640px 425px;
+    grid-template-columns: 201px 655px 295px;
     grid-template-rows: 101px 60px 945px 150px;
 }
 
@@ -105,20 +105,8 @@ nav {
 }
 
 .new-content {
-    float: left;
-    width: 100%;
-    min-height: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    position: relative;
-}
-
-.dashes {
-    border: 1px dashed;
-    left: 8%;
-    width: 91%;
-    position: relative;
-    margin-top: 97px;
+    max-width: 790px;
+    margin: 15px auto;
 }
 
 .button-content {
@@ -129,25 +117,87 @@ nav {
     border: 1px solid #000;
     background-color: #fff;
     min-height: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
     position: relative;
-    left: 65px
+    margin: 10px 0;
 }
 
-.button-center {
-    text-align: center;
-    right: -70px;
+.gtest {
     position: relative;
+}
+
+.divider-custom {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.divider-custom-line {
+    width: 100%;
+    max-width: 768px;
+    border: 1px dashed #000;
+}
+
+.img_left {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    z-index: 1;
+    height: 34px;
+}
+
+.img_right {
+    top: 15px;
+    left: 125px;
+    height: 34px;
+    position: absolute;
+}
+
+.img01 {
+    border-radius: 10px;
+    background: url(https://kiative.com/fondplants/picture_title/1558258420_.jpg) center center / 100% no-repeat rgb(241, 241, 241);
+}
+
+.img02 {
+    border-radius: 10px;
+    background: url(https://kiative.com/fondplants/picture_title/1558258420_.jpg) center center / auto 100px no-repeat rgb(241, 241, 241);
+}
+
+.item-img {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.img_new {
+    background: #FFC107;
+    border: none;
+    color: #fff;
+    padding: 2px;
+    opacity: .7;
+    margin: 10px;
+}
+
+.img_cat {
+    background: #2196F3;
+    border: none;
+    color: #fff;
+    padding: 2px;
+    opacity: .7;
+    margin: 10px;
+}
+
+.item-img-bar {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 105px 140px;
+    padding: 10px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 380px);
     grid-gap: 10px;
-    float: left;
-    position: relative;
-    left: 66px;
 }
 
 .grid-item {
@@ -159,129 +209,38 @@ nav {
 
 .grid-item .item-detail {
     font-size: 15px;
-    margin: 5px 2px;
-}
-
-.img01 {
-    cursor: pointer;
-    width: 160px;
-    height: 115px;
-    padding: 5px;
-    margin: 5px;
-    position: relative;
-    float: left;
-    border-radius: 10px;
-    background: url(https://kiative.com/fondplants/picture_title/1558258420_.jpg) center center / auto 100% no-repeat rgb(241, 241, 241);
-}
-
-.gtest {
-    position: relative;
-}
-
-.img_left {
-    position: absolute;
-    top: 15px;
-    left: 70px;
-    z-index: 1;
-    height: 34px;
-}
-
-.img_right {
-    top: 15px;
-    left: 186px;
-    height: 34px;
-    position: absolute;
-    z-index: 1;
-}
-
-.item-img .img_new {
-    position: relative;
-    padding: 0 9px;
-    background: #FFC107;
-    border: none;
-    border: 1px solid #FFC190;
-    opacity: .8;
-    color: #fff;
-}
-
-.item-img .img_cat {
-    position: relative;
-    padding: 0 9px;
-    background: #2196F3;
-    border: none;
-    border: 1px solid #FFC190;
-    opacity: .8;
-    color: #fff;
-}
-
-.divider-custom {
-    margin: 1.25rem 66px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.divider-custom-line {
-    width: 100%;
-    max-width: 768px;
-    border: 1px dashed #000;
+    text-align: left;
 }
 
 
 /* sidebar */
-
-.divider-custom-right {
-    margin: 1.25rem -1px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 18px;
-}
 
 .sidebar {
     grid-area: sidebar;
     background-color: #ccc;
 }
 
-.right-content {
-    float: right;
+.g-container {
+    /* max-width: 0; */
+    margin: 31px auto;
 }
 
 .button-content-right {
-    float: left;
-    padding: 10px;
-    width: 100px;
     text-align: center;
     border: 1px solid #000;
     background-color: #fff;
-    min-height: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    position: relative;
-    left: -86px;
-    top: 10px;
-}
-
-.dashes2 {
-    border: 1px dashed;
-    left: 9%;
-    width: 67%;
-    position: relative;
-    top: 88px;
-    margin: 10px;
+    padding: 10px;
 }
 
 .grid-container-right {
     display: grid;
-    grid-template-columns: 294px;
+    grid-template-columns: 270px;
     grid-gap: 10px;
-    float: right;
-    position: relative;
-    margin-right: -35px;
-    top: 69px;
+    margin-top: 30px;
 }
+
+
+/* footer */
 
 footer {
     grid-area: footer;
